@@ -1,8 +1,8 @@
 --You have access to Facebook's database which includes several tables relevant to user interactions. For this task, you are particularly interested in tables that store data about user posts, friendships, and likes.
 -- Calculate the total number of likes made on friend posts on Friday.
+--The output should contain two different columns 'likes' and 'date'.
 
 
-The output should contain two different columns 'likes' and 'date'.
 select count(l.post_id), date_liked
 from user_posts u
 join friendships f
